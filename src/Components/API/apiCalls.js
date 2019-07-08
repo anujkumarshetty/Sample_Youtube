@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Constants from '../../Constants/Constants';
 
-
 export default {
     searchApi:  (searchInput) => {
         return new Promise((resolve, reject) => {

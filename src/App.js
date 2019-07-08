@@ -32,9 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-
           <div className="row">
-
             <div className="col-6 col-md-3">
               <img src={image} width="134px" height="79px" alt="Logo" />
             </div>
