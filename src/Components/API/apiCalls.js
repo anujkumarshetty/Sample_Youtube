@@ -17,6 +17,5 @@ export default {
                     alert(Constants.errorAlert + error);
                 })
         })
-
     }
 } 
