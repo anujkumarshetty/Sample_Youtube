@@ -1,7 +1,11 @@
 import React from 'react';
 import '../Load/Load_Style.css';
 
-//@return video contents on first load
+/**
+ * Displays the youtube videos
+ * @param {Object} props API response object
+ * @returns youtube vidoes
+ */
 function onLoad(props) {
 	return (
 		<div className="onload">
