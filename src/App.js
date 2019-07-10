@@ -13,8 +13,8 @@ class App extends Component {
 		this.state = {
 			input: '',
 			URL: [],
-			isLoading: false,
-			load: []
+			load: [],
+			isLoading: false
 		}
 	}
 
