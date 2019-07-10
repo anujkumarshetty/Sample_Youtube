@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './Search-Style.css';
 import Constants from '../../Constants/Constants';
 
+//@param {text} search input
+//@return - search results
 function Search(props) {
     return (
         <div className="search">
