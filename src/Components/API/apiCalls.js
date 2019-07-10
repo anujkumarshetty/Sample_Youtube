@@ -5,7 +5,7 @@ export default {
 	searchApi: (searchInput) => {
 		return new Promise((resolve, reject) => {
 			axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet
-			&maxResults=${Constants.max_result}&q=${searchInput}
+			&maxResults=${Constants.max_search_result}&q=${searchInput}
 			%20world&key=AIzaSyAIaqAnv3dii8NXqWZKW8GAXxiEAmkpo-Y`)
 				.then((response) => {
 					let resp = response.data.items.map(item => {
@@ -21,7 +21,7 @@ export default {
 	onLoad: () => {
 		return new Promise((resolve, reject) => {
 			axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet
-			&maxResults=${Constants.onLoad}
+			&maxResults=${Constants.onLoad_video}
 			&key=AIzaSyAIaqAnv3dii8NXqWZKW8GAXxiEAmkpo-Y`)
 				.then((response) => {
 					let resp = response.data.items.map(item => {

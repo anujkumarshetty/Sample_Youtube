@@ -18,7 +18,7 @@ class App extends Component {
 		}
 	}
 
-	//@return - sets the state for load and isLoading
+//@return - sets the state for load and isLoading
 	componentDidMount() {
 		this.setState({ isLoading: true });
 		ApiCalls.onLoad().then(res => {
