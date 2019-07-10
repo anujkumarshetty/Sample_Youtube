@@ -18,7 +18,10 @@ class App extends Component {
 		}
 	}
 
-//@return - sets the state for load and isLoading
+	/**
+	 * Handles the contents while loading
+	 * @returns {object} returns the state object with updated values
+	 */
 	componentDidMount() {
 		this.setState({ isLoading: true });
 		ApiCalls.onLoad().then(res => {
@@ -31,12 +34,19 @@ class App extends Component {
 		})
 	}
 
-	//@param {text} captures the search input 
+	/**
+	 * Handles the input change event from the input handler
+	 * @param {object} e Event from the input handler
+	 * @returns {object} returns an state object
+	 */
 	handleInputChange = (e) => {
 		this.setState({ input: e.target.value })
 	}
 
-	//@return - Does API call with search input
+	/**
+	 * Handles the search based on user input by doing API calls
+	 * @returns {object} returns the response of API calls and sets the state
+	 */
 	handleSearch = () => {
 		this.setState(
 			{
