@@ -44,7 +44,7 @@ class App extends Component {
 	}
 
 	/**
-	 * Handles the search based on user input by doing API calls
+	 * Handles the search based on user input by performing API calls
 	 * @returns {object} returns the response of API calls and sets the state
 	 */
 	handleSearch = () => {
