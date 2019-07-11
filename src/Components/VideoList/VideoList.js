@@ -9,7 +9,8 @@ function Video(props) {
   return (
     <div>
       <iframe width="300" height="150" src={props.list}
-        frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+        frameBorder="0" allow="accelerometer; autoplay; encrypted-media; 
+        gyroscope; picture-in-picture">
       </iframe>
     </div>
   )
