@@ -1,14 +1,13 @@
 import React from 'react';
 import './Loader_Style.css';
 
-function Loader(props){
-    return(
-        <div>
-            {
-                props.isLoading && <div className="loader"></div>
-            }
-        </div>
-    )
+/**
+ * Displays loader animation while loading
+ * @param {boolean} props state of the loading
+ * @returns loader animation
+ */
+function Loader(props) {
+  return <div>{props.isLoading && <div className="loader"></div>}</div>
 }
 
 export default Loader;
