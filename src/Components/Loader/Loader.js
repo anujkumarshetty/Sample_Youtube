@@ -7,7 +7,12 @@ import './Loader_Style.css';
  * @returns loader animation
  */
 function Loader(props) {
-  return <div>{props.isLoading && <div className="loader"></div>}</div>
+  return <div>
+    {
+      props.isLoading &&
+      <div className="loader"></div>
+    }
+  </div>
 }
 
 export default Loader;
