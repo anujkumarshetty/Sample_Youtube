@@ -1,5 +1,4 @@
 import React from 'react';
-import './Main_Video_Style.css';
 
 /**
  * Handles the main video content
@@ -8,13 +7,13 @@ import './Main_Video_Style.css';
  */
 function Main_Video(props) {
   return (
-    <div className="video">
+    <div>
       {
         props.video.map((res, index) => {
           return (
             <div>
               {index === 0 &&
-                <iframe width="760" height="415" src={res} frameBorder="0"
+                <iframe width="760" height="450" src={res} frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen></iframe>
               }
