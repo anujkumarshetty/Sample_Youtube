@@ -19,8 +19,8 @@ function Search(props) {
         <div className="input-group-append">
           <button className="btn btn-outline-success"
             type="button"
-            onClick={props.search}
-          >Search</button>
+            onClick={props.search}>{Constants.Search_Button}
+          </button>
         </div>
       </div>
     </div>

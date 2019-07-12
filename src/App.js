@@ -6,6 +6,8 @@ import Main_Video from './Components/Main_Video/Main_Video';
 import Loader from './Components/Loader/Loader';
 import './App.css';
 import Load from './Components/Load/Load';
+import VideoList from './Components/VideoList/VideoList';
+import './Components/VideoList/VideoList.css'
 
 class App extends Component {
   constructor(props) {
@@ -78,9 +80,12 @@ class App extends Component {
         </div>
         <Load load={this.state.load} />
         <Loader isLoading={this.state.isLoading} />
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4"><Main_Video video={this.state.URL} /></div>
+        <div className="GridSystem">
+          <div>
+            <Main_Video video={this.state.URL} />
+          </div>
+          <div className="list">
+            <VideoList list={this.state.URL} />
           </div>
         </div>
       </div>
